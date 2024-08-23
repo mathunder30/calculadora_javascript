@@ -1,0 +1,93 @@
+<script type="text/javascript">
+
+    var soma = function(a,b){
+
+        return a + b;
+    }
+
+    var subtracacao = function(a,b){
+
+        return a - b;
+    }
+
+    var multi = function(a,b){
+
+        return a * b;
+    }
+
+    var divisao = function(a,b){
+
+        return a/b;
+    }
+
+    var potencia = function(a,b){
+
+        return a**b
+
+    }
+
+    var num1 = Number(prompt("Digite o primeiro numero: "))
+    
+    var num2 = Number(prompt("Digite o segundo numero"))
+
+    console.log("\n 1.Somar \n 2.Subtrair \n 3.Multiplicar \n 4.Dividir \n 5.Potencia \n 6.Impar OU Par")
+
+
+    var opcao = Number(prompt("Digite a opcção. "))
+
+    if(opcao == 1){
+
+        console.log("A soma dos números é: "+ soma(num1,num2))
+
+        document.write("A soma dos números é: "+ soma(num1,num2))
+
+    } else if(opcao == 2){
+
+        console.log("A subtração dos números é: "+ subtracacao(num1,num2))
+
+        document.write("A subtração dos números é: "+ subtracacao(num1,num2))
+
+    } else if(opcao == 3){
+
+        console.log("A multiplicação dos números é: "+ multi(num1,num2))
+
+        document.write("A multiplicação dos números é: "+ multi(num1,num2))
+
+    } else if(opcao == 4){
+
+        console.log("A divisão dos números é: "+ divisao(num1,num2))
+
+        document.write("A divisão dos números é: "+ divisao(num1,num2))
+
+    } else if(opcao == 5){
+
+        console.log("A potencia dos números é: "+ potencia(num1,num2))
+
+        document.write("A potencia dos números é: "+ potencia(num1,num2))
+
+    } else if(opcao == 6){
+
+        var resto = divisao(num1,num2);
+        if(resto%2 == 0){
+
+            console.log("O numero é par")
+
+            document.write("O numero é par")
+
+        } else if(resto%2 == 1){
+
+            console.log("o numero é impar")
+
+            document.write("o numero é impar")
+
+        } else{
+
+            console.log("numero ivalido!!!")
+        }
+    }
+    
+    else{
+
+        console.log("número invalido!!!!")
+    }
+</script>
